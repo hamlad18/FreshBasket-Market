@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.primary-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #16a34a;
+     padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.header-container {
+   display: flex;
+   }
+
+.logo-wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: center;  
+}
+
+.logo-wrapper i {
+    color: #16a34a;
+    font-size: 30px;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    align-items:center;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #6b7280;
+}
+
+
+
+.header-container {
+    padding:  30px 20px;
+}
+
+.hero-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: 50%;
+}
+
+.hero-text-tag {
+    background-color: #e5e7eb;
+    color: #6b7280;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.hero-heading  {
+    font-size: 50px;
+}
+
+.hero-paragraph {
+    color: #4b5563;
+}
+
+.hero-list {
+    list-style: none;
+    color: #989a9c;
+    gap: 5px;
+
+}
+
+.hero-lists i {
+    color: #16a34a;
+
+}
+
+.hero-btn-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.outline-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(11, 0, 0);
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #e5e7eb;
+}
+
+.hero-image {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;  
+}
+
+.cards-container {
+    background-color: #e0f2f1;
+    padding: 50px 20px;
+   
+}
+
+.how-it-works-title {
+    text-align: center;
+}
+
+.how-it-works-title h3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.how-it-works-title p {
+    color: #989a9c;
+}
+
+.how-it-works-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.how-it-works-card {
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-icon {
+    display: flex;
+    background-color: #e0f2f1;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.everything-you-need {
+    padding: 50px 20px;
+}
+
+.everything-you-need-title {
+    text-align: center;
+}
+
+.everything-you-need-title h3 {
+    font-size: 32px;
+    font-weight: 500px;
+}
+
+.everything-you-need-title p {
+    color: #4b5563;
+    font-size: 12px;
+    text-align: left;
+    padding: 10px;
+}
+
+.everything-you-need-card-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.everything-you-need-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 30px;
+}
+
+.everything-you-need-card h4 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.everything-you-need-card li {
+    color: #4b5563;
+    list-style: none;
+}
+
+.grocery-shopping-container {
+    background-color: #e0f2f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grocery-shopping-card {
+    background-color: #16a34a;
+    width: 70%;
+    margin: 20px 30px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grocery-shopping-card h3 {
+        font-size: 20px;
+        font-weight: 600;
+}
+
+.grocery-shopping-card p {
+    font-size: 10px;
+    font-weight: 100;
+    color: #e0f2f1;
+}
+
+.account-creation {
+    background-color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    font-size: 10px;
+    color: #16a34a;
+    border-radius: 2px;
+}
+
+.footer-section {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+   .footer-section p {
+    font-size: 10px;
+    padding: 20px;
+   } 
+

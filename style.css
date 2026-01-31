@@ -4,17 +4,35 @@
     padding: 0;
 }
 
+html {
+    /* font-size: 100%;  */
+    /* 1rem = 16px */ 
+    /* if 1rem = 10px then 10 /16 = 0.625, 0.625 x 100 = 62.5% */
+    /* 1rem = 10px */
+     font-size: 62.5%;
+}
+
+@media (max-width:1280px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
 body {
     font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
 }
+
+/* 632px, 740px, 1024px, 1280px */
 
 .primary-btn {
     display: inline-block;
     text-decoration: none;
     color: white;
     background-color: #16a34a;
-     padding: 10px 20px;
-    border-radius: 3px;
+     padding: 1rem 2rem;
+    border-radius: 0.3rem;
 }
 
 .header-container {
@@ -23,20 +41,20 @@ body {
 
 .logo-wrapper {
     display: flex;
-    gap: 5px;
+    gap: 0.5rem;
     align-items: center;  
 }
 
 .logo-wrapper i {
     color: #16a34a;
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 2rem;
     border-bottom: 1px solid #e5e7eb;
     align-items:center;
 }
@@ -44,7 +62,14 @@ body {
 .nav-items {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
+}
+
+@media (max-width:700px) {
+    .nav-items {
+        display: none;
+    }
+    
 }
 
 .nav-item a {
@@ -55,21 +80,21 @@ body {
 
 
 .header-container {
-    padding:  30px 20px;
+    padding:  3rem 2rem;
 }
 
 .hero-container {
     display: flex;
-    gap: 30px;
+    gap: 3rem;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 3rem 2rem;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     flex-basis: 50%;
 }
 
@@ -77,12 +102,23 @@ body {
     background-color: #e5e7eb;
     color: #6b7280;
     width: fit-content;
-    padding: 5px 10px;
-    border-radius: 20px;
+    padding: 5px 1rem;
+    border-radius: 2rem;
+}
+
+@media (max-width:400px) {
+    .hero-text-tag {
+            font-size: 1 rem;
+    }
 }
 
 .hero-heading  {
-    font-size: 50px;
+    font-size: 5rem;
+}
+@media (max-width) {
+    .hero-heading {
+        font-size: 3rem;
+    }
 }
 
 .hero-paragraph {
@@ -92,7 +128,7 @@ body {
 .hero-list {
     list-style: none;
     color: #989a9c;
-    gap: 5px;
+    gap: 0.5rem;
 
 }
 
@@ -103,27 +139,46 @@ body {
 
 .hero-btn-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
+    flex-wrap: wrap ;
 }
+
+
 
 .outline-btn {
     display: inline-block;
     text-decoration: none;
     color: rgb(11, 0, 0);
-    padding: 10px 20px;
-    border-radius: 7px;
-    border: 1px solid #e5e7eb;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+    border: 0.1rem solid #e5e7eb;
 }
 
 .hero-image {
-    width: 400px;
-    height: 500px;
-    border-radius: 10px;  
+    width: 40rem;
+    height: 50rem;
+    border-radius: 1rem;  
+}
+
+@media (max-width:900px) {
+    .hero-image {
+        width: 40rem;
+        height: 30rem;
+    }
+}
+
+@media (max-width:740px) {
+    .hero-image-wrapper {
+        display: none;
+    }
+    .hero-content {
+        flex-basis: 100%;
+    }
 }
 
 .cards-container {
     background-color: #e0f2f1;
-    padding: 50px 20px;
+    padding: 5rem 2rem;
    
 }
 
@@ -132,7 +187,7 @@ body {
 }
 
 .how-it-works-title h3 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 500;
 }
 
@@ -142,30 +197,37 @@ body {
 
 .how-it-works-cards {
     display: flex;
-    gap: 30px;
-    margin-top: 40px;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+@media (max-width:640px) {
+    .how-it-works-cards {
+        flex-direction: column; 
+    }
+    
 }
 
 .how-it-works-card {
     background-color: #fff;
-    padding: 50px;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .card-icon {
     display: flex;
     background-color: #e0f2f1;
-    width: 32px;
-    height: 32px;
+    width: 3.2rem;
+    height: 3.2rem;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
 }
 
 .everything-you-need {
-    padding: 50px 20px;
+    padding: 5rem 2rem;
 }
 
 .everything-you-need-title {
@@ -173,36 +235,43 @@ body {
 }
 
 .everything-you-need-title h3 {
-    font-size: 32px;
-    font-weight: 500px;
+    font-size: 3.2rem;
+    font-weight: 50rem;
 }
 
 .everything-you-need-title p {
     color: #4b5563;
-    font-size: 12px;
+    font-size: 1.2rem;
     text-align: left;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .everything-you-need-card-container {
     display: flex;
-    gap: 30px;
-    margin-top: 40px;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+@media (max-width:640px) {
+    .everything-you-need-card-container {
+        flex-direction: column;
+    }
+
 }
 
 .everything-you-need-card {
-    padding: 30px;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
     border-radius: 8px;
-    border: 1px solid #e5e7eb;
-    margin-bottom: 30px;
+    border: 0.1rem solid #e5e7eb;
+    margin-bottom: 3rem;
 }
 
 .everything-you-need-card h4 {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .everything-you-need-card li {
@@ -220,24 +289,25 @@ body {
 .grocery-shopping-card {
     background-color: #16a34a;
     width: 70%;
-    margin: 20px 30px;
-    padding: 20px 30px;
-    border-radius: 5px;
+    margin: 2rem 3rem;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
 }
 
 .grocery-shopping-card h3 {
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 600;
+        text-align: center;
 }
 
 .grocery-shopping-card p {
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: 100;
     color: #e0f2f1;
 }
@@ -245,10 +315,10 @@ body {
 .account-creation {
     background-color: #fff;
     text-decoration: none;
-    padding: 7px;
-    font-size: 10px;
+    padding: 0.7rem;
+    font-size: 1rem;
     color: #16a34a;
-    border-radius: 2px;
+    border-radius: 0.2rem;
 }
 
 .footer-section {
@@ -259,7 +329,7 @@ body {
     }
 
    .footer-section p {
-    font-size: 10px;
-    padding: 20px;
+    font-size: 1rem;
+    padding: 2rem;
    } 
 

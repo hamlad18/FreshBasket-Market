@@ -231,6 +231,7 @@ body {
 }
 
 .everything-you-need-title {
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -288,7 +289,7 @@ body {
 
 .grocery-shopping-card {
     background-color: #16a34a;
-    width: 70%;
+    width: 50%;
     margin: 2rem 3rem;
     padding: 2rem 3rem;
     border-radius: 0.5rem;
@@ -332,4 +333,11 @@ body {
     font-size: 1rem;
     padding: 2rem;
    } 
+
+@media (max-width:474px) {
+    .footer-section  {
+        flex-direction: column;
+    }
+}
+
 
